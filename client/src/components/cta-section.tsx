@@ -13,7 +13,7 @@ export const CTASection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          Ready to Grow Your NDIS Provider Business?
+          Ready to Grow Your Physiotherapy Clinic?
         </motion.h2>
         <motion.p 
           className="text-lg md:text-xl mb-8 max-w-2xl mx-auto"
@@ -22,7 +22,7 @@ export const CTASection: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          Take the first step toward a stronger online presence that connects you with NDIS participants. Contact us today for a complimentary digital marketing assessment.
+          Take the first step toward a stronger online presence that connects you with new patients. Contact us today for a complimentary digital marketing assessment.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

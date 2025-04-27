@@ -5,23 +5,23 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: "Inclusively Digital Marketing completely transformed our online presence. Our website now ranks on the first page for key NDIS terms, and we've seen a 65% increase in new participant inquiries.",
+    quote: "Inclusively Digital Marketing completely transformed our clinic's online presence. Our website now ranks on the first page for key physiotherapy search terms, and we've seen a 65% increase in new patient bookings.",
     authorName: "Sarah Johnson",
-    authorCompany: "Sydney NDIS Support Services",
+    authorCompany: "Sydney Physiotherapy Centre",
     authorImage: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
   },
   {
     id: 2,
-    quote: "As an NDIS provider, we needed a marketing partner who understood the complexities of the sector. Inclusively Digital Marketing delivered a compliant website and Google Ads campaign that brought us qualified leads.",
+    quote: "As a physiotherapy practice, we needed a marketing partner who understood the healthcare sector. Inclusively Digital Marketing delivered a professional website and Google Ads campaign that brought us qualified patients.",
     authorName: "Michael Thomas",
-    authorCompany: "Brisbane Disability Support",
+    authorCompany: "Brisbane Sports Physiotherapy",
     authorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
   },
   {
     id: 3,
-    quote: "Working with Inclusively has been a game-changer for our NDIS services. Their understanding of NDIS marketing compliance while still driving results is impressive. Highly recommended!",
+    quote: "Working with Inclusively has been a game-changer for our physiotherapy clinic. Their understanding of healthcare marketing compliance while still driving results is impressive. Highly recommended!",
     authorName: "Emma Wilson",
-    authorCompany: "Perth NDIS Provider Group",
+    authorCompany: "Perth Physiotherapy & Wellness",
     authorImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
   }
 ];
@@ -62,7 +62,7 @@ export const TestimonialsSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Hear from NDIS providers who've transformed their digital presence with us.
+            Hear from physiotherapy clinics who've transformed their digital presence with us.
           </motion.p>
         </div>
         
