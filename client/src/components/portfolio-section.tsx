@@ -7,24 +7,24 @@ const portfolioItems = [
     id: 1,
     category: "Website Design",
     categoryColor: "primary",
-    title: "Sydney NDIS Support Services",
-    description: "Complete website redesign with participant portal and service booking integration.",
+    title: "Sydney Physiotherapy Clinic",
+    description: "Complete website redesign with online booking system and patient portal integration.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 2,
     category: "Google Ads",
     categoryColor: "secondary",
-    title: "Brisbane NDIS Services",
-    description: "Google Ads campaign resulting in 210% increase in qualified NDIS participant leads.",
+    title: "Brisbane Sports Physiotherapy",
+    description: "Google Ads campaign resulting in 210% increase in qualified new patient appointments.",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
     id: 3,
     category: "Full Digital Strategy",
     categoryColor: "accent",
-    title: "Melbourne NDIS Provider Group",
-    description: "Comprehensive digital marketing strategy for a network of NDIS support providers.",
+    title: "Melbourne Physio & Wellness Group",
+    description: "Comprehensive digital marketing strategy for a network of physiotherapy clinics.",
     image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   }
 ];
@@ -79,7 +79,7 @@ export const PortfolioSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            See our work for NDIS providers across Australia.
+            See our work for physiotherapy clinics across Australia.
           </motion.p>
         </div>
         
