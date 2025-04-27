@@ -14,10 +14,10 @@ export const HeroSection: React.FC = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl mb-6 leading-tight">
-              Digital Marketing Specialists for <span className="text-primary">Healthcare</span> & <span className="text-secondary">NDIS</span>
+              Digital Marketing Specialists for <span className="text-secondary">NDIS</span> Providers
             </h1>
             <p className="text-lg md:text-xl mb-8 text-gray-700 max-w-2xl">
-              Transform your healthcare or NDIS business with strategic digital marketing and custom websites designed to reach more clients and improve your online presence.
+              Transform your NDIS business with strategic digital marketing and custom websites designed to reach more participants and improve your online presence.
             </p>
             <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-8">
@@ -36,7 +36,7 @@ export const HeroSection: React.FC = () => {
           >
             <img 
               src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Healthcare professionals using digital technology" 
+              alt="NDIS professionals using digital technology" 
               className="rounded-lg shadow-xl w-full" 
             />
           </motion.div>
