@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
           <div>
             <Logo invert className="mb-6" />
             <p className="text-gray-400 mb-6">
-              Specialized digital marketing for healthcare and NDIS providers across Australia.
+              Specialized digital marketing for NDIS providers across Australia.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors" aria-label="Facebook">

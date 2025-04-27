@@ -73,7 +73,7 @@ export const ContactSection: React.FC = () => {
           >
             <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">Get in Touch</h2>
             <p className="text-gray-700 mb-8">
-              Ready to discuss your healthcare or NDIS organization's digital marketing needs? Fill out the form, and our team will get back to you within 24 hours.
+              Ready to discuss your NDIS provider organization's digital marketing needs? Fill out the form, and our team will get back to you within 24 hours.
             </p>
             
             <div className="space-y-6">

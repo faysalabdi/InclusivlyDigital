@@ -5,9 +5,9 @@ import { Quote } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    quote: "Inclusively Digital Marketing completely transformed our online presence. Our website now ranks on the first page for key terms, and we've seen a 65% increase in new patient inquiries.",
-    authorName: "Dr. Sarah Johnson",
-    authorCompany: "Sydney Wellness Clinic",
+    quote: "Inclusively Digital Marketing completely transformed our online presence. Our website now ranks on the first page for key NDIS terms, and we've seen a 65% increase in new participant inquiries.",
+    authorName: "Sarah Johnson",
+    authorCompany: "Sydney NDIS Support Services",
     authorImage: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
   },
   {
@@ -19,9 +19,9 @@ const testimonials = [
   },
   {
     id: 3,
-    quote: "Working with Inclusively has been a game-changer for our practice. Their understanding of healthcare marketing compliance while still driving results is impressive. Highly recommended!",
+    quote: "Working with Inclusively has been a game-changer for our NDIS services. Their understanding of NDIS marketing compliance while still driving results is impressive. Highly recommended!",
     authorName: "Emma Wilson",
-    authorCompany: "Perth Physiotherapy Center",
+    authorCompany: "Perth NDIS Provider Group",
     authorImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&h=100&q=80"
   }
 ];
@@ -62,7 +62,7 @@ export const TestimonialsSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Hear from healthcare and NDIS providers who've transformed their digital presence with us.
+            Hear from NDIS providers who've transformed their digital presence with us.
           </motion.p>
         </div>
         
