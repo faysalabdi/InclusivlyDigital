@@ -38,7 +38,7 @@ export const ServicesSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Tailored digital marketing solutions designed specifically for NDIS providers.
+            Tailored digital marketing solutions designed specifically for physiotherapy clinics.
           </motion.p>
         </div>
         
@@ -67,16 +67,16 @@ export const ServicesSection: React.FC = () => {
                 <h3 className="font-heading font-bold text-2xl">Google Ads Management</h3>
               </div>
               <p className="text-gray-700 mb-6">
-                Targeted advertising campaigns designed to attract NDIS participants and support coordinators to your services. Our approach focuses on high-intent keywords that convert.
+                Targeted advertising campaigns designed to attract new patients seeking physiotherapy services. Our approach focuses on high-intent keywords that convert potential patients into bookings.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span>Specialized NDIS keyword research</span>
+                  <span>Specialized physiotherapy keyword research</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span>NDIS-compliant ad copy creation</span>
+                  <span>Compelling ad copy creation for physio clinics</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
@@ -111,7 +111,7 @@ export const ServicesSection: React.FC = () => {
                 <h3 className="font-heading font-bold text-2xl">Website Development</h3>
               </div>
               <p className="text-gray-700 mb-6">
-                Custom, accessible websites built specifically for NDIS providers. We create user-friendly experiences that meet NDIS compliance requirements and attract participants.
+                Custom, accessible websites built specifically for physiotherapy clinics. We create user-friendly experiences that meet healthcare compliance requirements and attract patients.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
@@ -124,11 +124,11 @@ export const ServicesSection: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span>SEO optimization for NDIS providers</span>
+                  <span>SEO optimization for physiotherapy clinics</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span>Secure participant portals</span>
+                  <span>Secure patient booking portals</span>
                 </li>
               </ul>
               <a href="#contact" className="inline-block font-heading font-medium text-primary hover:text-primary/80 transition-colors">

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { UserRound, HeartHandshake, Shield } from 'lucide-react';
 
-export const NDISSpecialization: React.FC = () => {
+export const PhysiotherapySpecialization: React.FC = () => {
   const staggerContainer = {
     hidden: { opacity: 0 },
     show: {
@@ -87,4 +87,4 @@ export const NDISSpecialization: React.FC = () => {
   );
 };
 
-export default NDISSpecialization;
+export default PhysiotherapySpecialization;
