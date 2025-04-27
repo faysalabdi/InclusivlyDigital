@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Google Ads Management</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Website Development</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Digital Strategy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">SEO for Healthcare</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">SEO for NDIS</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">NDIS Marketing</a></li>
             </ul>
           </div>
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Healthcare Marketing Guide</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">NDIS Provider Marketing Guide</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">NDIS Marketing Compliance</a></li>
               <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Digital Marketing FAQ</a></li>
             </ul>
