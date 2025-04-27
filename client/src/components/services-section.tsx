@@ -38,7 +38,7 @@ export const ServicesSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            Tailored digital marketing solutions designed specifically for healthcare and NDIS providers.
+            Tailored digital marketing solutions designed specifically for NDIS providers.
           </motion.p>
         </div>
         
@@ -67,12 +67,12 @@ export const ServicesSection: React.FC = () => {
                 <h3 className="font-heading font-bold text-2xl">Google Ads Management</h3>
               </div>
               <p className="text-gray-700 mb-6">
-                Targeted advertising campaigns designed to attract healthcare clients and NDIS participants to your services. Our approach focuses on high-intent keywords that convert.
+                Targeted advertising campaigns designed to attract NDIS participants and support coordinators to your services. Our approach focuses on high-intent keywords that convert.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span>Specialized healthcare keyword research</span>
+                  <span>Specialized NDIS keyword research</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
@@ -111,7 +111,7 @@ export const ServicesSection: React.FC = () => {
                 <h3 className="font-heading font-bold text-2xl">Website Development</h3>
               </div>
               <p className="text-gray-700 mb-6">
-                Custom, accessible websites built specifically for healthcare providers and NDIS organizations. We create user-friendly experiences that meet compliance requirements.
+                Custom, accessible websites built specifically for NDIS providers. We create user-friendly experiences that meet NDIS compliance requirements and attract participants.
               </p>
               <ul className="space-y-2 mb-6">
                 <li className="flex items-start">
@@ -124,11 +124,11 @@ export const ServicesSection: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span>SEO optimization for healthcare</span>
+                  <span>SEO optimization for NDIS providers</span>
                 </li>
                 <li className="flex items-start">
                   <Check className="text-secondary h-5 w-5 mt-0.5 mr-2 flex-shrink-0" />
-                  <span>Secure patient/client portals</span>
+                  <span>Secure participant portals</span>
                 </li>
               </ul>
               <a href="#contact" className="inline-block font-heading font-medium text-primary hover:text-primary/80 transition-colors">

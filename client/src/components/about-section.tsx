@@ -14,13 +14,13 @@ export const AboutSection: React.FC = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">
-              Healthcare Marketing Specialists With Over 10 Years Experience
+              NDIS Marketing Specialists With Over 10 Years Experience
             </h2>
             <p className="text-gray-700 mb-6">
-              At Inclusively Digital Marketing, we understand the unique challenges faced by healthcare providers and NDIS organizations in the digital space. Our team brings over a decade of specialized experience to help you navigate the complex digital landscape while maintaining compliance and reaching your ideal clients.
+              At Inclusively Digital Marketing, we understand the unique challenges faced by NDIS providers in the digital space. Our team brings over a decade of specialized experience to help you navigate the complex digital landscape while maintaining compliance and reaching your ideal participants.
             </p>
             <p className="text-gray-700 mb-8">
-              We've helped hundreds of healthcare businesses across Australia improve their online presence, increase qualified leads, and grow their practice through strategic digital marketing and custom website solutions.
+              We've helped hundreds of NDIS providers across Australia improve their online presence, increase qualified leads, and grow their services through strategic digital marketing and custom website solutions.
             </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex flex-col items-center bg-lightgray p-6 rounded-lg">
@@ -29,7 +29,7 @@ export const AboutSection: React.FC = () => {
               </div>
               <div className="flex flex-col items-center bg-lightgray p-6 rounded-lg">
                 <span className="text-4xl font-heading font-bold text-primary mb-2">250+</span>
-                <span className="text-center text-gray-700">Healthcare Clients</span>
+                <span className="text-center text-gray-700">NDIS Clients</span>
               </div>
             </div>
           </motion.div>
@@ -53,7 +53,7 @@ export const AboutSection: React.FC = () => {
               />
               <img 
                 src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" 
-                alt="Healthcare digital marketing team" 
+                alt="NDIS digital marketing team" 
                 className="rounded-lg h-64 w-full object-cover"
               />
               <img 

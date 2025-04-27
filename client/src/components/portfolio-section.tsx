@@ -7,8 +7,8 @@ const portfolioItems = [
     id: 1,
     category: "Website Design",
     categoryColor: "primary",
-    title: "North Sydney Medical Centre",
-    description: "Complete website redesign with online booking integration and patient portal.",
+    title: "Sydney NDIS Support Services",
+    description: "Complete website redesign with participant portal and service booking integration.",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   },
   {
@@ -23,8 +23,8 @@ const portfolioItems = [
     id: 3,
     category: "Full Digital Strategy",
     categoryColor: "accent",
-    title: "Melbourne Allied Health Group",
-    description: "Comprehensive digital marketing strategy for allied health provider network.",
+    title: "Melbourne NDIS Provider Group",
+    description: "Comprehensive digital marketing strategy for a network of NDIS support providers.",
     image: "https://images.unsplash.com/photo-1581056771107-24ca5f033842?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
   }
 ];
@@ -79,7 +79,7 @@ export const PortfolioSection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            See our work for healthcare and NDIS providers across Australia.
+            See our work for NDIS providers across Australia.
           </motion.p>
         </div>
         
