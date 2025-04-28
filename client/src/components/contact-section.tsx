@@ -98,7 +98,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg mb-1">Our Location</h3>
-                  <p className="text-gray-700">Sydney, Australia</p>
+                  <p className="text-gray-700">Melbourne, Australia</p>
                 </div>
               </div>
               
@@ -180,7 +180,7 @@ export const ContactSection: React.FC = () => {
                         <SelectContent>
                           <SelectItem value="google-ads">Google Ads Management</SelectItem>
                           <SelectItem value="website">Website Development</SelectItem>
-                          <SelectItem value="digital-strategy">Full Digital Strategy</SelectItem>
+                          {/* <SelectItem value="digital-strategy">Full Digital Strategy</SelectItem> */}
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
