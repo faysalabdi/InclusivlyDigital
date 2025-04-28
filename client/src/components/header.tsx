@@ -41,9 +41,9 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
         <div className="flex items-center">
           <a href="#home" className="flex items-center">
             <img
-              src="/logo.png"
+              src="/new-logo.jpeg"
               alt="Inclusively Digital Logo"
-              className="h-12 w-auto"
+              className="h-16 w-auto object-contain"
             />
           </a>
         </div>

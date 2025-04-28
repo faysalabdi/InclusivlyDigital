@@ -12,9 +12,9 @@ export const Footer: React.FC = () => {
           <div>
             <div className="mb-6">
               <img
-                src="/logo.png"
+                src="/new-logo.jpeg"
                 alt="Inclusively Digital Logo"
-                className="h-12 w-auto invert"
+                className="h-16 w-auto object-contain invert"
               />
             </div>
             <p className="text-gray-400 mb-6">
