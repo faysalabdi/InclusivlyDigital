@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { useMutation } from '@tanstack/react-query';
-import { queryClient, apiRequest } from '@/lib/queryClient';
+import { z } from 'zod';
 import { useToast } from '@/hooks/use-toast';
-import { contactFormSchema } from '@shared/schema';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -13,16 +11,22 @@ import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { MapPin, Mail, Phone } from 'lucide-react';
 
-interface ContactFormValues {
-  name: string;
-  email: string;
-  organization: string;
-  service: string;
-  message: string;
-}
+// Define schema without shared dependency
+const contactFormSchema = z.object({
+  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
+  email: z.string().email({ message: "Please enter a valid email address" }),
+  organization: z.string().min(2, { message: "Organization name is required" }),
+  service: z.enum(["google-ads", "website", "digital-strategy", "other"], {
+    required_error: "Please select a service",
+  }),
+  message: z.string().min(10, { message: "Message must be at least 10 characters" }),
+});
+
+type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 export const ContactSection: React.FC = () => {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
@@ -35,29 +39,40 @@ export const ContactSection: React.FC = () => {
     }
   });
   
-  const contactMutation = useMutation({
-    mutationFn: (data: ContactFormValues) => {
-      return apiRequest('POST', '/api/contact', data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message Sent!",
-        description: "Thank you for your message. We'll get back to you within 24 hours.",
+  const onSubmit = async (data: ContactFormValues) => {
+    setIsSubmitting(true);
+    
+    try {
+      // Using Formspree as a static form service
+      const response = await fetch("https://formspree.io/f/faysal@inclusivly.com.au", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...data,
+          _subject: `Contact Form: ${data.service} inquiry from ${data.name}`
+        }),
       });
-      form.reset();
-      queryClient.invalidateQueries({ queryKey: ['/api/contact'] });
-    },
-    onError: (error) => {
+      
+      if (response.ok) {
+        toast({
+          title: "Message Sent!",
+          description: "Thank you for your message. We'll get back to you within 24 hours.",
+        });
+        form.reset();
+      } else {
+        throw new Error("Server responded with an error");
+      }
+    } catch (error) {
       toast({
         title: "Something went wrong",
-        description: error.message || "Please try again later.",
+        description: "Please try again later or email us directly.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
-  });
-  
-  const onSubmit = (data: ContactFormValues) => {
-    contactMutation.mutate(data);
   };
 
   return (
@@ -73,7 +88,7 @@ export const ContactSection: React.FC = () => {
           >
             <h2 className="font-heading font-bold text-3xl md:text-4xl mb-6">Get in Touch</h2>
             <p className="text-gray-700 mb-8">
-              Ready to discuss your physiotherapy clinic's digital marketing needs? Fill out the form, and our team will get back to you within 24 hours.
+              Ready to discuss your digital marketing needs? Fill out the form, and our team will get back to you within 24 hours.
             </p>
             
             <div className="space-y-6">
@@ -83,7 +98,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg mb-1">Our Location</h3>
-                  <p className="text-gray-700">123 Marketing Street, Sydney NSW 2000</p>
+                  <p className="text-gray-700">Sydney, Australia</p>
                 </div>
               </div>
               
@@ -93,17 +108,7 @@ export const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg mb-1">Email Us</h3>
-                  <p className="text-gray-700">hello@inclusivelydigital.com.au</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start">
-                <div className="bg-primary rounded-full p-3 text-white mr-4">
-                  <Phone className="h-5 w-5" />
-                </div>
-                <div>
-                  <h3 className="font-heading font-bold text-lg mb-1">Call Us</h3>
-                  <p className="text-gray-700">1300 123 456</p>
+                  <p className="text-gray-700">faysal@inclusivly.com.au</p>
                 </div>
               </div>
             </div>
@@ -205,9 +210,9 @@ export const ContactSection: React.FC = () => {
                 <Button 
                   type="submit" 
                   className="w-full bg-primary hover:bg-primary/90 text-white font-heading font-semibold px-6 py-3"
-                  disabled={contactMutation.isPending}
+                  disabled={isSubmitting}
                 >
-                  {contactMutation.isPending ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </Form>
