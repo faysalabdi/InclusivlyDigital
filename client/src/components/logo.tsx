@@ -1,6 +1,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
-import logoPath from '@assets/new-logo.png';
+// Use relative path instead of alias to avoid build issues
+import logoPath from '../../assets/logo.png';
 
 interface LogoProps {
   className?: string;
