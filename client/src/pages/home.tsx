@@ -4,7 +4,6 @@ import HeroSection from '@/components/hero-section';
 import ServicesSection from '@/components/services-section';
 import AboutSection from '@/components/about-section';
 import PhysiotherapySpecialization from '@/components/physiotherapy-specialization';
-import PortfolioSection from '@/components/portfolio-section';
 import TestimonialsSection from '@/components/testimonials-section';
 import CTASection from '@/components/cta-section';
 import ContactSection from '@/components/contact-section';
@@ -45,7 +44,6 @@ export default function Home() {
         <ServicesSection />
         <AboutSection />
         <PhysiotherapySpecialization />
-        <PortfolioSection />
         <TestimonialsSection />
         <CTASection />
         <ContactSection />
