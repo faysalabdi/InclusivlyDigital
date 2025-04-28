@@ -12,27 +12,18 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Ensure assets directory exists in public
-const assetsDir = path.join(__dirname, 'dist', 'client', 'assets');
-try {
-  if (!fs.existsSync(assetsDir)) {
-    fs.mkdirSync(assetsDir, { recursive: true });
-  }
+// Log the directory structure for debugging
+console.log('Current directory structure:');
+if (fs.existsSync(path.join(__dirname, 'dist'))) {
+  console.log('Dist directory exists');
+  const distContents = fs.readdirSync(path.join(__dirname, 'dist'));
+  console.log('Dist contents:', distContents);
   
-  // Copy any assets from attached_assets to the public directory
-  const sourceDir = path.join(__dirname, 'attached_assets');
-  if (fs.existsSync(sourceDir)) {
-    const files = fs.readdirSync(sourceDir);
-    files.forEach(file => {
-      const sourcePath = path.join(sourceDir, file);
-      const destPath = path.join(assetsDir, file);
-      if (fs.statSync(sourcePath).isFile()) {
-        fs.copyFileSync(sourcePath, destPath);
-      }
-    });
+  if (distContents.includes('client')) {
+    console.log('Client directory exists');
+    const clientContents = fs.readdirSync(path.join(__dirname, 'dist', 'client'));
+    console.log('Client contents:', clientContents);
   }
-} catch (err) {
-  console.error('Error handling assets:', err);
 }
 
 // Static file serving for the Vite build output
@@ -41,11 +32,17 @@ app.use(express.static(path.join(__dirname, 'dist', 'client')));
 // Setup API routes
 registerRoutes(app);
 
-// Serve the SPA for client-side routing
+// For any other GET request, send back the index.html file to support SPA routing
 app.get('*', (req, res) => {
   // Skip API routes
   if (req.path.startsWith('/api')) return;
-  res.sendFile(path.join(__dirname, 'dist', 'client', 'index.html'));
+  
+  const indexHtml = path.join(__dirname, 'dist', 'client', 'index.html');
+  if (fs.existsSync(indexHtml)) {
+    res.sendFile(indexHtml);
+  } else {
+    res.status(404).send('Not found: index.html is missing');
+  }
 });
 
 // Export for Vercel serverless use
