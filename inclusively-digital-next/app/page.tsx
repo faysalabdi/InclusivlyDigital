@@ -10,7 +10,7 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="flex items-center">
               <Image
-                src="/images/inclusivlylogo.png"
+                src="/images/new-logo.png"
                 alt="Inclusively Digital Marketing Logo"
                 width={200}
                 height={60}
@@ -339,7 +339,7 @@ export default function Home() {
             <div className="mb-6 md:mb-0">
               <div className="flex items-center">
                 <Image
-                  src="/images/inclusivlylogo.png"
+                  src="/images/new-logo.png"
                   alt="Inclusively Digital Marketing Logo"
                   width={180}
                   height={50}
