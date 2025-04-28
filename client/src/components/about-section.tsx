@@ -28,7 +28,7 @@ export const AboutSection: React.FC = () => {
                 <span className="text-center text-gray-700">Years Experience</span>
               </div>
               <div className="flex flex-col items-center bg-lightgray p-6 rounded-lg">
-                <span className="text-4xl font-heading font-bold text-primary mb-2">250+</span>
+                <span className="text-4xl font-heading font-bold text-primary mb-2">20+</span>
                 <span className="text-center text-gray-700">Physio Clients</span>
               </div>
             </div>

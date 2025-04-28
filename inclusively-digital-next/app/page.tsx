@@ -292,7 +292,7 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-lg mb-1">Location</h4>
-                      <p className="text-gray-600">Sydney, Australia</p>
+                      <p className="text-gray-600">Melbourne, Australia</p>
                     </div>
                   </div>
                 </div>
