@@ -4,6 +4,31 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
+      {/* Header */}
+      <header className="w-full bg-white shadow-sm py-4 sticky top-0 z-50">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center">
+              <Image
+                src="/images/inclusivlylogo.png"
+                alt="Inclusively Digital Marketing Logo"
+                width={200}
+                height={60}
+                className="h-12 w-auto"
+              />
+            </div>
+            <nav className="hidden md:flex space-x-8">
+              <Link href="#services" className="text-gray-800 hover:text-blue-600 font-medium">
+                Services
+              </Link>
+              <Link href="#contact" className="text-gray-800 hover:text-blue-600 font-medium">
+                Contact
+              </Link>
+            </nav>
+          </div>
+        </div>
+      </header>
+
       {/* Hero Section */}
       <section className="w-full bg-gray-100 py-20 md:py-32">
         <div className="container mx-auto px-4">
@@ -312,7 +337,15 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <h2 className="text-2xl font-bold">Inclusively Digital</h2>
+              <div className="flex items-center">
+                <Image
+                  src="/images/inclusivlylogo.png"
+                  alt="Inclusively Digital Marketing Logo"
+                  width={180}
+                  height={50}
+                  className="h-10 w-auto brightness-0 invert"
+                />
+              </div>
               <p className="text-gray-400 mt-2">Healthcare Marketing Specialists</p>
             </div>
             
