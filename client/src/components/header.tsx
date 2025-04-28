@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
           <a href="#services" className="nav-link font-heading font-medium text-dark hover:text-primary transition-colors">Services</a>
           <a href="#about" className="nav-link font-heading font-medium text-dark hover:text-primary transition-colors">About</a>
           <Button asChild className="bg-primary hover:bg-primary/90 font-heading">
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">Get Free Quote</a>
           </Button>
         </nav>
 
@@ -80,7 +80,7 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
           <a href="#services" onClick={handleNavLinkClick} className="font-heading font-medium text-dark hover:text-primary transition-colors py-2">Services</a>
           <a href="#about" onClick={handleNavLinkClick} className="font-heading font-medium text-dark hover:text-primary transition-colors py-2">About</a>
           <Button asChild className="bg-primary text-white font-heading w-full">
-            <a href="#contact" onClick={handleNavLinkClick}>Contact Us</a>
+            <a href="#contact" onClick={handleNavLinkClick}>Get Free Quote</a>
           </Button>
         </div>
       </div>

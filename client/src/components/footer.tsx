@@ -24,11 +24,8 @@ export const Footer: React.FC = () => {
           <div>
             <h3 className="font-heading font-bold text-lg mb-4 text-black">Services</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Rehabilitation</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Sports Physiotherapy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">NDIS Support</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Pain Management</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Mobility Assessment</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Website Development</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Google Ads Management</a></li>
             </ul>
           </div>
           

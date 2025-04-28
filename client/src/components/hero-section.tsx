@@ -24,7 +24,7 @@ export const HeroSection: React.FC = () => {
                 <a href="#services">Explore Our Services</a>
               </Button>
               <Button asChild variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary hover:text-white font-heading font-semibold px-8">
-                <a href="#contact">Get in Touch</a>
+                <a href="#contact">Book an Obligation-Free Trial</a>
               </Button>
             </div>
           </motion.div>
