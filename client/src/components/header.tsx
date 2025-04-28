@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import Logo from './logo';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -40,7 +39,13 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
     )}>
       <div className="container mx-auto px-4 flex justify-between items-center">
         <div className="flex items-center">
-          <Logo />
+          <a href="#home" className="flex items-center">
+            <img
+              src="/new-logo.jpeg"
+              alt="Inclusively Digital Logo"
+              className="h-12 w-auto"
+            />
+          </a>
         </div>
 
         {/* Desktop Navigation */}

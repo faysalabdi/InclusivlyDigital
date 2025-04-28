@@ -1,5 +1,4 @@
 import React from 'react';
-import Logo from './logo';
 import { MapPin, Mail, Phone } from 'lucide-react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
@@ -11,7 +10,13 @@ export const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <Logo invert className="mb-6" />
+            <div className="mb-6">
+              <img
+                src="/new-logo.jpeg"
+                alt="Inclusively Digital Logo"
+                className="h-12 w-auto invert"
+              />
+            </div>
             <p className="text-gray-400 mb-6">
               Specialized digital marketing for NDIS providers across Australia.
             </p>
