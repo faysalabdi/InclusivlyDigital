@@ -43,8 +43,8 @@ export const ContactSection: React.FC = () => {
     setIsSubmitting(true);
     
     try {
-      // Using Formspree as a static form service
-      const response = await fetch("https://formspree.io/f/faysal@inclusivly.com.au", {
+      // Fix the Formspree URL format - use a proper formspree endpoint
+      const response = await fetch("https://formspree.io/f/manonzdz", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

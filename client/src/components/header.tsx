@@ -53,7 +53,6 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
           <a href="#home" className="nav-link font-heading font-medium text-dark hover:text-primary transition-colors">Home</a>
           <a href="#services" className="nav-link font-heading font-medium text-dark hover:text-primary transition-colors">Services</a>
           <a href="#about" className="nav-link font-heading font-medium text-dark hover:text-primary transition-colors">About</a>
-          <a href="#testimonials" className="nav-link font-heading font-medium text-dark hover:text-primary transition-colors">Testimonials</a>
           <Button asChild className="bg-primary hover:bg-primary/90 font-heading">
             <a href="#contact">Contact Us</a>
           </Button>
@@ -80,7 +79,6 @@ export const Header: React.FC<HeaderProps> = ({ className }) => {
           <a href="#home" onClick={handleNavLinkClick} className="font-heading font-medium text-dark hover:text-primary transition-colors py-2">Home</a>
           <a href="#services" onClick={handleNavLinkClick} className="font-heading font-medium text-dark hover:text-primary transition-colors py-2">Services</a>
           <a href="#about" onClick={handleNavLinkClick} className="font-heading font-medium text-dark hover:text-primary transition-colors py-2">About</a>
-          <a href="#testimonials" onClick={handleNavLinkClick} className="font-heading font-medium text-dark hover:text-primary transition-colors py-2">Testimonials</a>
           <Button asChild className="bg-primary text-white font-heading w-full">
             <a href="#contact" onClick={handleNavLinkClick}>Contact Us</a>
           </Button>
